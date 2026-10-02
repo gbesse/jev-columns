@@ -19,6 +19,10 @@ A definition pins question, kind, criteria, source expression, threshold, target
 ## Boundaries
 The CLI, actual trigger function, pg transaction adapter, real Postgres integration test and Jev transport remain unwired in this alpha; SQL generators and worker semantics are complete/tested building blocks. MySQL is out of scope. Source expressions are trusted operator SQL. No live benchmark is claimed.
 
+## Shareable demo report
+
+Run `npm run demo:report` to capture this repository’s bundled example as one JSON object with the project purpose, version and complete demo output. The command fails if the demo fails, so the report is useful when sharing a reproducible first look or reporting unexpected behavior. The bundled demo’s data and safety boundaries still apply.
+
 ## Validation
 Run `npm run check && npm run typecheck && npm test && npm run demo`; CI uses Node 22 and 24. A future real-Postgres suite will be conditional on `DATABASE_URL`.
 
